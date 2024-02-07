@@ -1,8 +1,159 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: roboto;
+  font-size: 60%;
+}
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  height: 100%;
+  width: 100%;
+}
+
+// adjust font size
+@media all and (min-width: 50px)   {  body  { font-size:0.1em;  } }
+@media all and (min-width: 100px)  {  body  { font-size:0.2em;  } }
+@media all and (min-width: 200px)  {  body  { font-size:0.4em;  } }
+@media all and (min-width: 300px)  {  body  { font-size:0.6em;  } }
+@media all and (min-width: 400px)  {  body  { font-size:0.8em;  } }
+@media all and (min-width: 500px)  {  body  { font-size:1.0em;  } }
+@media all and (min-width: 600px)  {  body  { font-size:1.2em;  } }
+@media all and (min-width: 700px)  {  body  { font-size:1.4em;  } }
+@media all and (min-width: 800px)  {  body  { font-size:1.6em;  } }
+@media all and (min-width: 900px)  {  body  { font-size:1.8em;  } }
+@media all and (min-width: 1000px) {  body  { font-size:2.0em;  } }
+@media all and (min-width: 1100px) {  body  { font-size:2.2em;  } }
+@media all and (min-width: 1200px) {  body  { font-size:2.4em;  } }
+@media all and (min-width: 1300px) {  body  { font-size:2.6em;  } }
+@media all and (min-width: 1400px) {  body  { font-size:2.8em;  } }
+@media all and (min-width: 1500px) {  body  { font-size:3.0em;  } }
+@media all and (min-width: 1500px) {  body  { font-size:3.2em;  } }
+@media all and (min-width: 1600px) {  body  { font-size:3.4em;  } }
+@media all and (min-width: 1700px) {  body  { font-size:3.6em;  } }
 
 
+// global button 
+svg :hover {
+  transform: scale(1.1);
+}
+
+
+.nav-bar-container {
+  margin-bottom: 1%;
+}
+
+.css-96uuyl {
+  height: 50%;  
+}
+
+
+
+
+
+
+.add-buttons {
+  height: 100%;
+  width: 9%;
+}
+
+.add-button-svg {
+  height: 30%;
+  width: 10%;
+  padding: 15%;
+  cursor: pointer;
+}
+
+.add-button-description {
+  margin: 0;
+}
+
+
+// collections 
 .collection-container {
+  height: 15%;
   display: flex;
   justify-content: center;
 
-  border: black dotted 2px;
+  border: 1px black dotted;
 }
+
+
+
+
+// items 
+.item-card-container {
+  height: 50% !important;
+  cursor: pointer;
+
+  margin-left: 1%;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+
+
+
+
+
+.menu-and-display-container {
+  height: 80%;
+  width: 90%; 
+  position: relative;
+  top: 1%;
+  left: 5%;
+  border: black;
+
+}
+
+.menu-top-container {
+  height: 10%;
+  width: 100%;
+  border: 1px grey dotted;
+
+  display: flex;
+}
+
+.menu-left-and-main-display-container {
+  height: 90%;
+  width: 100%;
+
+  border: 1px black dotted;
+
+  display: flex;
+  justify-content: left;
+}
+
+.view-options {
+  width: 10%;
+  height: 100%;
+
+  border: 1px black dotted;
+
+  // display: flex;
+  // justify-content: left;
+  // flex-direction: column;
+}
+
+
+
+.main-collection-display-container {
+  height: 100%;
+  width: 85%;
+
+
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+

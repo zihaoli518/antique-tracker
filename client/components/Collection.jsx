@@ -8,11 +8,11 @@ const Collection = (props) => {
 
   const updateDisplay = () => {
     const newArray = [];
-    const collection = props.collection;
-    console.log(collection)
-    const itemName = '1'
-    for (let item in collection) {
-      newArray.push(<Item itemName={props}/>)
+    const collectionObj = props.allItems[props.collectionName];
+
+    // const itemName = '1'
+    for (let itemName in collectionObj) {
+      newArray.push(<Item key={itemName}itemName={itemName} itemData={collectionObj[itemName]} allItems={props.allItems}/>)
     }
     setCollectionDisplay(newArray);
   }
@@ -25,7 +25,7 @@ const Collection = (props) => {
 
   return (
     <div className='collection-container'>
-      <h5>{props.collectionName}</h5>
+      {/* <h5>{props.collectionName}</h5> */}
       {collectionDisplay}
     </div>
   ) 
